@@ -1,0 +1,42 @@
+@media screen  and (max-width:767px){
+    .modal { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 609px;
+        padding: 40px;
+        background-color: #ffffff;
+    }
+}
+
+
+// .modal {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 528px;
+//     height: 581px;
+//     padding: 40px;
+//     background-color: #ffffff;
+// }
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @extend %align;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    transition: var(--transition-dur-and-func);
+    transition: duration 250ms;
+
+    padding: 0;
+}

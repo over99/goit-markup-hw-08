@@ -1,0 +1,18 @@
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo-footer__img-first {
+    @include font(26px, 700, 31px);
+    font-family: var(--secondary-font);
+    
+    color: var(--secondary-logo-blue);
+}
+
+.logo-footer__img-second {
+    @include font(26px,700,31px);
+    font-family: var(--secondary-font);
+    
+    color: var(--secondary-logo-white);
+}

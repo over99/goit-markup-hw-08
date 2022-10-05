@@ -1,0 +1,44 @@
+
+
+.work {
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+}
+
+.work {
+    padding-top: 0;
+}
+
+.work-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.work__title {
+    padding-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.class-title__text {
+    @extend %align;
+    font-size: 14px;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    overflow: auto;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+}
+
+.class-title {
+    position: relative;
+}

@@ -1,0 +1,200 @@
+@media screen and(max-width:767px) {
+.hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/photo-main/background-hero.jpg');
+        max-width: 480px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 400px;
+        text-align: center;
+        padding-top: 116px;
+    }
+
+    .hero__title{
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 1.6;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+                
+}
+
+@media screen and (min-width:768px) {
+    .hero{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/photo-main/background-hero.jpg');
+        max-width: 768px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 400px;
+        text-align: center;
+        padding-top: 116px;
+    }
+
+    .hero__title {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 1.6;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        display: block;
+        width: 360px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        height: 600px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/photo-main/background-hero.jpg');
+    }
+
+    .hero__title {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 696px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        color: var(--primary-text-hero);
+    }
+
+    .model-open-btn {
+        align-items: center;
+        margin: auto;
+        display: block;
+        padding: 10px 32px;
+
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+
+        border: none;
+        color: var(--primary-text-color-them-dark);
+        background: var(--accent-color);
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            color: var(--primary-text-color-them-dark);
+            background: var(--background-open-model-btn);
+        }
+    }
+}
+
+
+// @media (min-resolution: 2dppx) {
+//     .hero{
+//         background-image: url('../../images/photo-main/background-hero-mobile@2x.jpg');
+//     }
+// }
+
+// @media (min-width:768px) {
+//     .hero {
+//         background-image: url('../../images/photo-main/background-hero-tablet.jpg');
+//     }
+
+//     @media (min-resolution: 2dppx) {
+//         .hero {
+//             background-image: url('../../images/photo-main/background-hero-tablet@2x.jpg');
+//         }
+//     }
+// }
+
+// @media (min-width:1200px) {
+//     .hero {
+//         background-image: url('../../images/photo-main/background-hero.webp');
+//     }
+
+//     @media (min-resolution: 2dppx) {
+//         .hero {
+//             background-image: url('../../images/photo-main/background-hero@2x.jpg');
+//         }
+//     }
+// }
+
+// .hero {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+
+//     height: 600px;
+//     max-width: 1200px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-position: center;
+
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url('../images/photo-main/background-hero.jpg');
+// }
+
+// .hero__title {
+//     text-align: center;
+//     margin-bottom: 30px;
+//     width: 696px;
+
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+
+//     color: var(--primary-text-hero);
+// }
+
+// .model-open-btn {
+//     align-items: center;
+//     margin: auto;
+//     display: block;
+//     padding: 10px 32px;
+
+//     font-family: var(--primary-font);
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+
+//     border: none;
+//     color: var(--primary-text-color-them-dark);
+//     background: var(--accent-color);
+//     border-radius: 4px;
+
+//     &:hover,
+//     &:focus {
+//         color: var(--primary-text-color-them-dark);
+//         background: var(--background-open-model-btn);
+//     }
+// }
+

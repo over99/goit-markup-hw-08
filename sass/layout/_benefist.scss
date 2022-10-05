@@ -1,0 +1,116 @@
+@media screen and (max-width: 767px) {
+    .benefist-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 480px;
+    }
+    
+    .benefits-info__benefits-list {
+        padding-bottom: 30px;
+        text-align: start;
+    }
+
+    .benefits-info__title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .benefits-info__detalis {
+        background-color: #F5F4FA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+}
+
+.benefits-info__text {
+    font-weight: 400;
+    line-height: 1.71;
+
+    color: var(--secondary-text-color-them-light);
+}
+
+.benefits-info__detalis {
+    @extend %align;
+}
+
+.benefits-info__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .benefits-info__detalis {
+        background-color: #F5F4FA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 120px;
+
+        margin-bottom: 30px;
+    }
+
+    .benefits-info__benefits-list {
+        width: calc((100% - 30px)/2);
+    }
+
+    .benefits-info__title {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .benefits-info__benefits-list {
+        width: 270px;
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}
+
+
+
+
+
+
+
+
+
+// .benefits-info__detalis {
+//     @extend %align;
+//     height: 120px;
+//     margin-bottom: 30px;
+
+//     background-color: #F5F4FA;
+// }
+
+// .benefits-info__title {
+//     margin-bottom: 10px;
+
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+// }
+
+// .benefits-info__text {
+//     font-weight: 400;
+//     line-height: 1.71;
+
+//     color: var(--secondary-text-color-them-light);
+// }

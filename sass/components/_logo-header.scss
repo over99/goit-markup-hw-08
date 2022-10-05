@@ -1,0 +1,15 @@
+.logo__img-header {
+    @include font(26px, 700, 31px);
+    font-family: var(--secondary-font);
+    font-style: normal;
+
+    color: var(--primary-logo-dark);
+}
+
+.logo__img {
+    @include font(26px, 700, 31px);
+    font-family: var(--secondary-font);
+    font-style: normal;
+
+    color: var(--primary-logo-blue);
+}
