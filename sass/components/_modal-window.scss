@@ -1,4 +1,20 @@
-@media screen  and (max-width:767px){
+@media screen and (max-width:479px) {
+    .modal{
+        width: 300px;
+        height: 609px;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+@media screen  and (min-width:480px) and (max-width:767px){
     .modal { 
         position: absolute;
         top: 50%;
@@ -6,6 +22,32 @@
         transform: translate(-50%, -50%);
         width: 450px;
         height: 609px;
+        padding: 40px;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 609px;
+        padding: 40px;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 528px;
+        height: 581px;
         padding: 40px;
         background-color: #ffffff;
     }
