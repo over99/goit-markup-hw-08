@@ -1,6 +1,6 @@
 @media screen and (max-width:767px) {
     .all-footer {
-        width: 480px;
+        max-width: 480px;
     }
     
     .container-footer {
@@ -66,15 +66,16 @@
         align-items: center;
     }
 
-    .footer-form__fotter-input-email {
-        width: 300px;
+    .footer-form__footer-input-email {
+        display: flex;
         height: 50px;
         background-color: inherit;
+        width: 100%;
+        margin: 20px 15px;
+        outline: none;
     }
 
     .footer-modal-btn {
-        margin-top: 30px;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -129,10 +130,7 @@
 }
 
 .footer-form__footer-input-email {
-    width: 358px;
     height: 50px;
-    padding-left: 16px;
-    margin-top: 20px;
 
 
     color: #ffffff;
@@ -203,8 +201,8 @@
     }
 
     .subscription {
-        margin-top: 60px;
         text-align: center;
+        margin-top: 60px;
     }
 
     .footer-form__footer-lable {
@@ -215,6 +213,8 @@
 
     .footer-form__footer-input-email {
         margin-bottom: 20px;
+        margin-top: 20px;
+        width: 450px;
     }
 }
 
@@ -281,8 +281,6 @@
     .all-footer {
         display: flex;
         align-items: baseline;
-        justify-content: space-around;
-        flex-wrap: wrap;
     }
 
     .footer-form {
@@ -299,6 +297,9 @@
         display: block;
         margin-left: auto;
         text-align: start;
+    }
+    .subscription {
+        margin-top: 0;
     }
 
     .subscription__footer-form-descr {
@@ -379,7 +380,7 @@
 
     .footer-tablet {
         justify-content: space-evenly;
-        align-items: stretch;
+        align-items: baseline;
     }
 }
 

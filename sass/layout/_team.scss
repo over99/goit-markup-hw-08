@@ -9,7 +9,8 @@
     .team-descr {
         text-align: center;
         max-width: 450px;
-        padding-top: 30px;
+        margin-top: 30px;
+        margin-bottom: 24px;
 
         &__name-person {
             padding-bottom: 10px;
@@ -45,7 +46,6 @@
 .team-img {
     display: block;
     width: 100%;
-    padding-bottom: 30px;
 }
 
 @media screen and (min-width:768px) {
@@ -72,23 +72,25 @@
         font-size: 16px;
         line-height: 1.2;
         font-weight: 500;
+        margin-top: 30px;
         margin-bottom: 10px;
     }
 
     .team-descr__proffession-person {
         font-size: 16px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
         font-weight: 400;
         color: #757575;
     }
 
     .team-img {
-        max-width: 354px;
+        width: 354px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .team-info {
+        
         display: flex;
         flex-wrap: nowrap;
         column-gap: 30px;
@@ -101,6 +103,11 @@
         border-radius: 0px 0px 4px 4px;
         margin-bottom: 30px;
     }
+
+    .team-img {
+        width: 270px;
+    }
+
 
 }
 
