@@ -1,13 +1,6 @@
-@media screen and (max-width:767px) {
-    .social-list {
-        padding-bottom: 30px;
-    }
-}
-
 .social-list {
     @extend %align;
     column-gap: 10px;
-    margin-bottom: 30px;
 }
 
 .social-list__social-link {
