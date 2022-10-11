@@ -116,9 +116,9 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -305,6 +305,12 @@ body {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 320px) {
+  .modal-form-own-checkbox {
+    width: 100%;
+    height: 15px;
+  }
+}
 .modal-form-title {
   font-family: var(--primary-font);
   font-size: 20px;
@@ -392,7 +398,7 @@ body {
 }
 .modal-form-check:checked + .modal-form-own-checkbox {
   background-color: #2196F3;
-  border-color: #ffffff;
+  border-color: #2196F3;
 }
 
 .checkbox-text {
@@ -401,6 +407,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+}
+
+.modal-form-own-checkbox {
+  width: 16px;
+  height: 15px;
 }
 
 .modal-form-own-checkbox-icon {
@@ -465,6 +476,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   padding: 40px;
   background-color: #ffffff;
 }
@@ -519,14 +531,8 @@ body {
   padding: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .social-list {
-    padding-bottom: 30px;
-  }
-}
 .social-list {
   column-gap: 10px;
-  margin-bottom: 30px;
 }
 
 .social-list__social-link {
@@ -721,7 +727,7 @@ body {
   position: absolute;
   display: block;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   height: 4px;
   width: 100%;
   border-radius: 2px;
@@ -971,16 +977,16 @@ body {
   .team-descr {
     text-align: center;
     max-width: 450px;
-    margin-top: 30px;
-    margin-bottom: 24px;
+    padding-top: 30px;
+    padding-bottom: 24px;
   }
   .team-descr__name-person {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
   }
   .team-descr__proffession-person {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 400;
     color: #757575;
@@ -1020,13 +1026,14 @@ body {
   .team-descr {
     text-align: center;
     max-width: 450px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .team-descr__name-person {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.2;
     font-weight: 500;
-    margin-top: 30px;
     margin-bottom: 10px;
   }
   .team-descr__proffession-person {
@@ -1050,7 +1057,7 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .team-img {
     width: 270px;
@@ -1086,8 +1093,9 @@ body {
   border-radius: 4px;
   color: #AFB1B8;
   fill: currentColor;
-  height: 100%;
-  width: 100%;
+  height: 92px;
+  width: 210px;
+  flex-basis: calc((100% - 30px) / 2);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list__client-link:hover, .client-list__client-link:focus {
@@ -1160,8 +1168,9 @@ body {
     display: flex;
     height: 50px;
     background-color: inherit;
+    padding-left: 16px;
     width: 100%;
-    margin: 20px 15px;
+    margin-bottom: 20px;
     outline: none;
   }
   .footer-modal-btn {
@@ -1174,6 +1183,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .footer-icon {
+    margin-left: 10px;
+  }
 }
 .addres-list__adress-info {
   font-style: normal;
@@ -1183,6 +1195,10 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
+}
+
+.container-footer {
+  line-height: 1.71;
 }
 
 .contact-email,
@@ -1198,6 +1214,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  display: block;
+  align-items: center;
+  text-align: center;
 }
 
 .social-footer-list {
@@ -1243,6 +1262,30 @@ body {
   color: var(--primary-text-color-them-dark);
   background: var(--background-open-model-btn);
 }
+.footer-modal-btn .addres-list__adress-info:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-modal-btn .addres-list__contact-addres {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-addres-text);
+}
+.footer-modal-btn .addres-list__contact-addres:hover, .footer-modal-btn .addres-list__contact-addres:focus {
+  color: var(--accent-color);
+}
+.footer-modal-btn .addres-list__contact-list {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-text-list);
+}
+.footer-modal-btn .addres-list__contact-list:hover, .footer-modal-btn .addres-list__contact-list:focus {
+  color: var(--accent-color);
+}
 
 @media screen and (min-width: 768px) {
   .addres-list__adress-info {
@@ -1272,6 +1315,14 @@ body {
   }
   .subscription {
     text-align: center;
+    margin-top: 20px;
+  }
+  .subscription__footer-form-descr {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-subscription {
     margin-top: 60px;
   }
   .footer-form__footer-lable {
@@ -1280,9 +1331,12 @@ body {
     align-items: center;
   }
   .footer-form__footer-input-email {
-    margin-bottom: 20px;
-    margin-top: 20px;
     width: 450px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+  }
+  .footer-icon {
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1335,11 +1389,13 @@ body {
   .all-footer {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
   .footer-form {
     margin-left: auto;
   }
   .footer-form__footer-lable {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1352,16 +1408,21 @@ body {
   .subscription {
     margin-top: 0;
   }
+  .footer-subscription {
+    margin-top: 0;
+  }
   .subscription__footer-form-descr {
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
+    display: block;
+    align-items: center;
+    text-align: center;
   }
   .footer-form__footer-input-email {
     width: 358px;
     height: 50px;
     padding-left: 16px;
-    margin-top: 20px;
     color: #ffffff;
     background: var(--background-footer);
     border-radius: 4px;
@@ -1374,7 +1435,6 @@ body {
     position: relative;
     min-width: 200px;
     height: 50px;
-    margin-top: 20px;
     margin-left: 12px;
     font-family: var(--primary-font);
     font-weight: 500;
